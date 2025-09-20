@@ -37,9 +37,10 @@ module.exports = {
     new ForkTsCheckerWebpackPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: "Development",
-      inject: "body"
-    })
+    title: "Development",
+    template: "./index.html",
+    inject: "body"
+  })
   ],
   
   output: {
